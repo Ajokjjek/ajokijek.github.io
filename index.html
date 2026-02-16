@@ -1,40 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Football & Cricket Zone</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Football Legends Arena</title>
+
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
-  text-align: center;
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0d0d0d;
+color:white;
+text-align:center;
 }
-header {
-  background: #e10600;
-  padding: 20px;
-  font-size: 28px;
-  font-weight: bold;
+
+header{
+background:linear-gradient(90deg,#000,#b30000);
+padding:30px;
+font-size:30px;
+font-weight:bold;
+letter-spacing:2px;
 }
-section {
-  padding: 40px 20px;
+
+.section{
+padding:60px 20px;
 }
-button {
-  padding: 15px 30px;
-  font-size: 18px;
-  background: #ffcc00;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
+
+.player{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:40px;
+margin-bottom:60px;
 }
-button:hover {
-  background: #ffaa00;
+
+.player img{
+width:300px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(255,0,0,0.6);
 }
-.footer {
-  background: #222;
-  padding: 15px;
-  font-size: 14px;
+
+.player-info{
+max-width:500px;
+text-align:left;
+}
+
+.player-info h2{
+font-size:28px;
+margin-bottom:10px;
+color:#ffcc00;
+}
+
+.player-info p{
+line-height:1.7;
+font-size:16px;
+color:#ccc;
+}
+
+.stats span{
+display:block;
+margin:5px 0;
+font-weight:bold;
+color:#fff;
+}
+
+.youtube-section{
+margin:60px 20px;
+}
+
+.youtube-btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 35px;
+background:red;
+color:white;
+font-size:18px;
+font-weight:bold;
+text-decoration:none;
+border-radius:10px;
+box-shadow:0 0 15px rgba(255,0,0,0.7);
+transition:0.3s;
+}
+
+.youtube-btn:hover{
+background:#ff0000;
+transform:scale(1.05);
+}
+
+footer{
+background:#111;
+padding:20px;
+color:#aaa;
+font-size:14px;
 }
 </style>
 </head>
@@ -42,27 +100,62 @@ button:hover {
 <body>
 
 <header>
-⚽🏏 Football & Cricket Zone
+⚽ Football Legends Arena
 </header>
 
-<section>
-<h2>Welcome to My Sports Channel</h2>
-<p>Latest Football & Cricket Updates, Analysis & Shorts</p>
+<div class="section">
 
-<a href="https://youtube.com/@football123-x7o" target="_blank">
-<button>Subscribe on YouTube</button>
-</a>
-
-</section>
-
-<section>
-<h2>About This Channel</h2>
-<p>We provide daily sports content including match highlights, player comparisons, and breaking news.</p>
-</section>
-
-<div class="footer">
-© 2026 Football & Cricket Zone
+<!-- Ronaldo -->
+<div class="player">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg">
+<div class="player-info">
+<h2>Cristiano Ronaldo</h2>
+<p>
+Cristiano Ronaldo is one of the greatest footballers in history.
+Known for his athleticism, powerful shooting and goal scoring ability.
+</p>
+<div class="stats">
+<span>🏆 5× Ballon d'Or Winner</span>
+<span>⚽ 850+ Career Goals</span>
+<span>🏆 5× Champions League Titles</span>
+<span>🌍 Euro 2016 Winner</span>
 </div>
+</div>
+</div>
+
+<!-- Messi -->
+<div class="player">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Lionel_Messi_20180626.jpg">
+<div class="player-info">
+<h2>Lionel Messi</h2>
+<p>
+Lionel Messi is widely regarded as one of the most talented players ever.
+Famous for his dribbling, vision and playmaking skills.
+</p>
+<div class="stats">
+<span>🏆 8× Ballon d'Or Winner</span>
+<span>⚽ 800+ Career Goals</span>
+<span>🏆 4× Champions League Titles</span>
+<span>🌍 FIFA World Cup 2022 Winner</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- YouTube Section -->
+<div class="youtube-section">
+<h2 style="color:#ffcc00;">Follow Our YouTube Channel</h2>
+<p>Match analysis, highlights and football content every week.</p>
+
+<a href="https://youtube.com/@football123-x7o" target="_blank" class="youtube-btn">
+🔴 Subscribe on YouTube
+</a>
+</div>
+
+<footer>
+© 2026 Football Legends Arena | Powered by You
+</footer>
 
 </body>
 </html>
